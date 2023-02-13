@@ -11,4 +11,4 @@ payment_system_site = PaymentSystemSite(name="Payment System admin")
 
 @admin.register(Item, site=payment_system_site)
 class ItemAdmin(admin.ModelAdmin):
-    pass
+    list_display = ['name', 'price']
