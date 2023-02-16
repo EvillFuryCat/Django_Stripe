@@ -15,13 +15,16 @@ services:
     environment: 
       &api-environment
       DJANGO_ENV: dev
-      DJANGO_SECRET_KEY: secret_key
+      DJANGO_SECRET_KEY: 'django-insecure-zuq!tp7e*loq29*f)lp^#hvgi$q@*pwk@+m3(z@v(^@z@)t(a4'
 
       DATABASE_NAME: postgres
       DATABASE_USER: postgres
       DATABASE_PASSWORD: postgres
       DATABASE_HOST: db
       DATABASE_PORT: 5432
+
+      STRIPE_PUBLIC_KEY: pk_test_51Mc30vD79bunDAajR0DeevMyE749ShgZQ3FlsbggP1j8yv0o7hIcZp2uOQfWq2E0jWhZW1Z0RSFU23EWa4Ffkci400oIYPMVH4
+      STRIPE_SECRET_KEY: sk_test_51Mc30vD79bunDAajByhclVWY3AFiidpKc3mS4rGCwdz3HuhvOj5FRTB7jHhOz07NpTQ6F16MInFFbVezdjqOFwCB00AVVQQjLd
     command: python manage.py runserver 0.0.0.0:8000
 
   db:

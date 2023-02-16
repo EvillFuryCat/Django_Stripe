@@ -128,3 +128,12 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+#Stripe
+STRIPE_PUBLIC_KEY = os.environ['STRIPE_PUBLIC_KEY']
+STRIPE_SECRET_KEY = os.environ['STRIPE_SECRET_KEY']
+STRIPE_WEBHOOK_SECRET = ''
+
+BACKEND_DOMAIN = 'http://0.0.0.0:8000/main/'
+PAYMENT_SUCCESS_URL = 'http://0.0.0.0:8000/main/success/'
+PAYMENT_CANCEL_URL = 'http://0.0.0.0:8000/main/cancel/'
