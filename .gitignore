@@ -1,6 +1,7 @@
 payment_system/__pycache__/
 main/__pycache__/
 main/migrations/__pycache__/
+main/models/__pycahe__/
 # Editors
 .vscode/
 .idea/
